@@ -6,9 +6,6 @@ from django.views.generic.list import ListView
 from .models import Product, ProductCategory, Basket
 
 
-# def index(request):
-#     return render(request, "index.html")
-
 class IndexView(TemplateView):
     template_name = "index.html"
 

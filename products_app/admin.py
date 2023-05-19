@@ -12,7 +12,6 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ("name", "price", "quantity", "category")
     search_fields = ("name", )
     fields = ("name", "description", "image", ("price", "quantity"), "category")
-    readonly_fields = ("description",)
 
 
 class BasketAdmin(admin.TabularInline):
